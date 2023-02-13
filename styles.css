@@ -1,27 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Gruppo&family=Merriweather&display=swap');
 
 body {
-    font-family: 'Gruppo', cursive;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     font-weight: bold;
     margin-top: 0px;
-    color: white ;
+    color: rgb(255, 255, 255) ;
     background-color: #000000;
+    text-align: center;
 }
 
-h1, p {
+#center {
+  text-align: center;
+}
+
+.pc {
+  height: 200px;
+  padding: 20px; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abel', sans-serif;
   font-family: 'Gruppo', cursive;
   font-family: 'Merriweather', serif;
+  text-align: center;
+  padding: 20px;
+}
+
+p {
+  font-family: monospace;
+  text-align: center;
+  padding: 20px; 
 }
 
 /* Add a black background color to the top navigation */
 .navbar {
-    background-color: #0d5104;
-    overflow: hidden;
-    margin-left: -7.85px;
+  background-color: #0d5104;
+  overflow: hidden;
+  margin-left: -7.85px;
+  font-family: 'Abel', sans-serif;
+  font-family: 'Gruppo', cursive;
+  font-family: 'Merriweather', serif;
 }
   
 /* Style the links inside the navigation bar */
@@ -29,9 +48,9 @@ h1, p {
     float: left;
     color: #dddddd;
     text-align: center;
-    padding: 24px 55px;
+    padding: 24px 35px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 22px;
 }
   
 /* Change the color of links on hover */
