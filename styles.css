@@ -1,36 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Gruppo&family=Merriweather&display=swap');
 
+/* clean one = 'Abel', sans-serif
+   old timey = 'Merriweather', serif 
+   goofey futuristic = 'Gruppo', cursive */
+
+
 body {
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: bold;
-    margin-top: 0px;
-    color: rgb(255, 255, 255) ;
-    background-color: #000000;
-    text-align: center;
+  font-weight: bold;
+  margin-top: 0px;
+  color: rgb(255, 255, 255) ;
+  background-color: #f2f7f5;
+  font-color:
 }
 
-#center {
-  text-align: center;
+#techskills {
+  float: left;
+  padding-left: 90px;
 }
 
-.pc {
-  height: 200px;
-  padding: 20px; 
+ul {
+  padding-top: 100px;
+  padding-left: 60px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Abel', sans-serif;
-  font-family: 'Gruppo', cursive;
+.vl {
+  border-left: 6px solid green;
+  height: 500px;
+}
+
+h1 {
   font-family: 'Merriweather', serif;
   text-align: center;
   padding: 20px;
 }
 
-p {
-  font-family: monospace;
+h2 {
   text-align: center;
-  padding: 20px; 
+  padding: 2px;
+
+}
+
+ul {
+  font-family: 'Abel', sans-serif;
+}
+
+p {
+  font-family: 'Abel', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.melol {
+  height: 200px;
 }
 
 /* Add a black background color to the top navigation */
@@ -38,9 +59,7 @@ p {
   background-color: #0d5104;
   overflow: hidden;
   margin-left: -7.85px;
-  font-family: 'Abel', sans-serif;
-  font-family: 'Gruppo', cursive;
-  font-family: 'Merriweather', serif;
+  
 }
   
 /* Style the links inside the navigation bar */
@@ -48,9 +67,9 @@ p {
     float: left;
     color: #dddddd;
     text-align: center;
-    padding: 24px 35px;
+    padding: 20px 30px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 15px;
 }
   
 /* Change the color of links on hover */
