@@ -10,20 +10,27 @@
 <body>
 
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
-        <a href="projects.html"><i class="fa fa-fw fa-search"></i>Projects</a> 
-        <a class="active" href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        <a href="index.html">Home</a> 
+        <a href="projects.html">Projects</a> 
+        <a class="active" href="contact.html">Contact</a>
         <a href="https://docs.google.com/document/d/1plxjYsKOwPUkDrmB8b3fK9_9K2pS5jCDwt0eeABMAkY/edit#heading=h.x8fm1uorkbaw">Resume</a>
         </div>
 
-    <h1>Contacts</h1>
-    <p>Have a questions or want to reach out?</p>
-    <form action="/action_page.php">
+    <h1 class="center">Contacts</h1>
+    <p>Have a questions or want to reach out? You can contact me by email at cscarlett@brooklynsteamcenter.org</p>
+    <form action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+    method="post">
+        <input name="send-to" value="myemail@steamcenter.org" hidden>
         <label for="fname">Name: </label>
-        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" placeholder="Your Name Here" name="fname"><br><br>
         <label for="lname">E-mail: </label>
-        <input type="text" id="lname" name="lname"><br><br>
+        <input type="text" placeholder="Your E-mail Here" name="e-mail"><br><br>
+        <label for="lname">Comments:</label>
+        <textarea name="comments" placeholder="Your Comments Here" id="Comments" cols="30" rows=""></textarea><br><br>
         <input type="submit" value="Submit">
+        <br>
+        <label>E-mail</label>
+        <input type="radio" name="contactTypes" value="E-mail">
     </form>
 </body>
 </html>
