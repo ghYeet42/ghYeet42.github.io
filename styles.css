@@ -8,46 +8,50 @@
 body {
   font-weight: bold;
   margin-top: 0px;
-  color: rgb(138, 16, 16) ;
-  background-color: #f2f7f5;
+  color: rgb(0, 0, 0) ;
+  background-color: #ffffff;
 }
 
-form {
+.medias {
   text-align: center;
+  text-decoration-line: none;
+  font-size: 75px;
 }
 
-#techskills {
-  float: left;
-  padding-left: 90px;
-}
-
-ul {
-  padding-top: 100px;
-  padding-left: 60px;
-}
-
-.vl {
-  border-left: 6px solid green;
-  height: 500px;
+.medias a {
+  text-decoration-line: none;
 }
 
 .center {
   text-align: center;
 }
 
+.form {
+  text-align: center;
+  margin: 35px;
+}
+
+#techskillstitle {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+#techSkillsLogo {
+  text-align: center; 
+}
+
+#techSkillsLogo2 {
+  text-align: center; 
+}
+
+#techSkillsLogo3 {
+  text-align: center; 
+}
+
 h1 {
   font-family: 'Merriweather', serif;
-  padding: 20px;
-}
-
-h2 {
-  text-align: center;
-  padding: 2px;
-  margin-left: 15px;
-}
-
-ul {
-  font-family: 'Abel', sans-serif;
+  padding-top: 20px;
+  padding-bottom: ;
 }
 
 p {
@@ -60,14 +64,23 @@ p {
   height: 200px;
 }
 
-.vl {
-  border-left: 1px solid rgb(0, 0, 0);
-  height: 500px;
-  position: sticky;
-  left: 50%;
-  margin-left: -3px;
-  margin-top: 600px;
-  top: 0;
+input, textarea {
+  background-color: rgb(255, 255, 255);
+  border-radius: 7px;
+  padding: 4px 7px;
+  font-family: 'Abel', sans-serif;
+}
+
+input[type=submit] {
+  background-color:#127804;
+}
+
+input:focus, textarea:focus {
+  background-color: aliceblue;
+}
+
+input[type=submit]:hover{
+  background-color: #18bd02;
 }
 
 /* Add a black background color to the top navigation */

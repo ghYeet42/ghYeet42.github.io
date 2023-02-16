@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <title>Carter Scarlett - Avid Life Enjoyer</title>
 </head>
@@ -17,8 +18,20 @@
         </div>
 
     <h1 class="center">Contacts</h1>
-    <p>Have a questions or want to reach out? You can contact me by email at cscarlett@brooklynsteamcenter.org</p>
-    <form action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
+    <p>Have a questions or want to reach out?</p>
+    
+    <div class="medias">
+        <a href="mailto:cscarlett@brooklynsteamcenter.org">
+        <i class="fa fa-envelope"></i>
+        </a>
+        
+        <a href="https://github.com/ghYeet42">
+        <i class="fa fa-github"></i>
+        </a>
+    </div>
+    <hr>
+
+    <form class="form" action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
     method="post">
         <input name="send-to" value="myemail@steamcenter.org" hidden>
         <label for="fname">Name: </label>
@@ -26,11 +39,11 @@
         <label for="lname">E-mail: </label>
         <input type="text" placeholder="Your E-mail Here" name="e-mail"><br><br>
         <label for="lname">Comments:</label>
-        <textarea name="comments" placeholder="Your Comments Here" id="Comments" cols="30" rows=""></textarea><br><br>
-        <input type="submit" value="Submit">
+        <textarea name="comments" placeholder="Your Comments Here" id="Comments" cols="30" rows=""></textarea><br>
         <br>
         <label>E-mail</label>
-        <input type="radio" name="contactTypes" value="E-mail">
+        <input type="radio" name="contactTypes" value="E-mail"><br><br>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
