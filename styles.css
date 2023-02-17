@@ -37,21 +37,32 @@ body {
 }
 
 #techSkillsLogo {
-  text-align: center; 
+  position: relative;
+  left: 17%;
 }
 
 #techSkillsLogo2 {
-  text-align: center; 
+  position: relative;
+  left: 45%;
+  top: -272px;
+  margin-top: 4px;
 }
 
 #techSkillsLogo3 {
-  text-align: center; 
+  position: relative;
+  left: 67%;
+  top: -505px;
+}
+
+#techSkillsLogo3 {
+  position: relative;
+  left: 67%;
+  top: -505px;
 }
 
 h1 {
   font-family: 'Merriweather', serif;
   padding-top: 20px;
-  padding-bottom: ;
 }
 
 p {
@@ -62,6 +73,7 @@ p {
 
 .melol {
   height: 200px;
+  text-align: center;
 }
 
 input, textarea {
@@ -88,7 +100,8 @@ input[type=submit]:hover{
   background-color: #0d5104;
   overflow: hidden;
   margin-left: -7.85px;
-  
+  font-family: ;
+  font-size: 2px;
 }
   
 /* Style the links inside the navigation bar */
