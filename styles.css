@@ -8,7 +8,6 @@
 body {
   font-weight: bold;
   margin-top: 0px;
-  color: rgb(0, 0, 0) ;
   background-color: #ffffff;
 }
 
@@ -25,6 +24,11 @@ body {
 .center {
   text-align: center;
 }
+aside {
+  position: relative;
+  top: 
+}
+
 
 .form {
   text-align: center;
@@ -38,27 +42,27 @@ body {
 
 #techSkillsLogo {
   position: relative;
-  left: 17%;
+  margin-left: 20px;
+  
 }
 
 #techSkillsLogo2 {
   position: relative;
-  left: 45%;
-  top: -272px;
-  margin-top: 4px;
+  margin-left: 40px;
+
 }
 
 #techSkillsLogo3 {
-  position: relative;
-  left: 67%;
-  top: -505px;
+  position: static;
+  margin-left: 2px;
+
 }
 
-#techSkillsLogo3 {
+#techSkillsLogo4 {
   position: relative;
-  left: 67%;
-  top: -505px;
+  margin-left: 10px;
 }
+
 
 h1 {
   font-family: 'Merriweather', serif;
@@ -99,9 +103,10 @@ input[type=submit]:hover{
 .navbar {
   background-color: #0d5104;
   overflow: hidden;
-  margin-left: -7.85px;
-  font-family: ;
-  font-size: 2px;
+  margin-left: -7px;
+  margin-right: -7.8px;
+  position: sticky;
+  top: 0;
 }
   
 /* Style the links inside the navigation bar */
