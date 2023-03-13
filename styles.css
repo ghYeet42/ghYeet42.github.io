@@ -8,36 +8,84 @@
 
 
 body {
-  font-weight: bold;
+  font-size: large;
+  font-weight: bolder;
   margin-top: 0px;
   color: #ffffff;
-  background-color: #44666A;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2335575b' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #686A69;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23585a59' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.vl {
-  border-left: 6px solid green;
-  height: 500px;
-  position: static;
-  margin-left: -3px;
-  padding-t: 1px;
+* {
+  box-sizing: inherit;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: none;
+  width: 100%;
+  height: 400px;
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+  display: inline-block;
+}
+
+.column > img {
+  height: 45%;
+ }
+
+.column {
+  text-align: center;
+  width: 95%;
+
+}
+
+.row {
+  padding-top: 40px;
+  text-align: center;
+ }
+
+.column > h2 {
+  text-decoration: underline;
+}
+
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .medias {
   text-align: center;
   text-decoration-line: none;
-  font-size: 75px;
+  font-size: 60px;
 }
 
 .medias a {
   text-decoration-line: none;
 }
 
+#yt {
+  color:red;
+}
+
+#git {
+  color: black
+}
+
+#email {
+  color: white
+}
+
 .center {
   text-align: center;
 }
-aside {
-  position: relative;
+
+label {
+  font-family: 'Merriweather', serif;
+  font-size: 16px
 }
 
 .form {
@@ -46,36 +94,29 @@ aside {
 }
 
 #techskillstitle {
-  margin-left: 25%;
+  margin-left: 17%;
   font-family: 'Merriweather', serif;
+  font-size: 22px;
 }
 
 #techSkillsLogo {
-  position: static;
-  margin-left: 3%;
-  margin-right: auto;
-  display: inline;
+  text-align: center;
+  display: inline-block;
 }
 
 #techSkillsLogo2 {
-  position: static;
-  margin-left: 3%;
-  margin-right: 2%;
-  display: inline;
+  text-align: center;
+  display: inline-block;
 }
 
 #techSkillsLogo3 {
-  position: static;
-  margin-left: 1.1%;
-  margin-right: auto;
-  display: inline;
+  text-align: center;
+  display: inline-block;
 }
 
 #techSkillsLogo4 {
-  position: static;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+  text-align: center;
+  display: inline-block;
 }
 
 h1 {
@@ -91,7 +132,6 @@ p {
 
 .melol {
   height: 200px;
-  text-align: center;
 }
 
 input, textarea {
@@ -102,7 +142,7 @@ input, textarea {
 }
 
 input[type=submit] {
-  background-color:#127804;
+  background-color:#ffffff;
 }
 
 input:focus, textarea:focus {
@@ -110,7 +150,7 @@ input:focus, textarea:focus {
 }
 
 input[type=submit]:hover{
-  background-color: #18bd02;
+  background-color: #ffcc00;
 }
 
 /* Add a black background color to the top navigation */
@@ -147,14 +187,118 @@ input[type=submit]:hover{
     background-color: #ffcc00;
     color: #000000;
 }
-  
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  @media screen and (max-width: 500px) {
-    
 
+@media screen and (max-width: 400px) {
     
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
     .navbar a {
       float: none;
       display: block;
+      font-size: 20px;
     }
+
+  /* Create two equal columns that floats next to each other */
+    .column {
+      float: none;
+      text-align: center;
+      width: 100%;
+      padding: 10px;
+      height: 300px; 
+      font-family: 'Merriweather', serif;
+      text-decoration: underline;
+    }
+
 }
+
+@media screen  and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    display: block;
+    font-size: 20px
+  }
+
+  #techskillstitle {
+    margin-left: 1%;
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+  }
+
+  .column {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    font-family: 'Merriweather', serif;
+    text-decoration: underline;
+
+  }
+
+}
+
+@media screen 
+and (min-width: 401px) and (max-width: 600px) {
+  
+  .column {
+    float: none;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    height: 300px;
+    font-family: 'Merriweather', serif;
+    text-decoration: underline;
+
+  }
+
+  .column > img {
+    height: 35%;
+   }
+
+}
+
+@media screen  and (min-width: 550px) {
+  .column > img {
+    height: 45%;
+   }
+
+   .column > p {
+    margin-top: 5%;
+    font-size: 23px;
+   }
+
+   .column > h2 {
+    font-size: 36px;
+   }
+
+  .column {
+    text-align: center;
+    height: 200;
+
+  }
+   .row {
+    text-align: center;
+    height: 20px;
+   }
+
+  #techSkillsLogo {
+    display: inline-block;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  #techSkillsLogo2 {
+    display: inline-block;
+    margin-left: 70px;
+    margin-right: -20px;
+  }
+  
+  #techSkillsLogo3 {
+    display: inline-block;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  #techSkillsLogo4 {
+    display: inline;
+  }
+} 
