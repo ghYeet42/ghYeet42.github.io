@@ -129,12 +129,14 @@ label {
 h1 {
   font-family: 'Merriweather', serif;
   padding-top: 20px;
+  font-size: 45px;
 }
 
 p {
   font-family: 'Abel', sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 30px;
+  font-size: 30px;
 }
 
 .melol {
@@ -204,19 +206,24 @@ input[type=submit]:hover{
       font-size: 20px;
     }
 
+    #getmoneyreal {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
   /* Create two equal columns that floats next to each other */
     .column {
       text-align: center;
       width: 100%;
-      height: 300px; 
+      height: 250px; 
       font-family: 'Merriweather', serif;
       text-decoration: underline;
     }
 
     .column > p {
       text-align: center;
-      padding-top: ;
-      font-size: 17px;
+      font-size: 24px;
     }
 
     #techSkillsLogo {
@@ -227,7 +234,6 @@ input[type=submit]:hover{
     #techSkillsLogo2 {
       display: inline-block;
       height: 30%;
-
     }
     
     #techSkillsLogo3 {
@@ -240,35 +246,14 @@ input[type=submit]:hover{
       height: 30%;
     }
 
-}
-
-@media screen  and (max-width: 400px) {
-
-    /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-  .navbar a {
-    float: none;
-    display: block;
-    font-size: 20px
-  }
-
-  #techskillstitle {
-    margin-left: 1%;
-    font-family: 'Merriweather', serif;
-    font-size: 22px;
-  }
-
-  .column {
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-    font-family: 'Merriweather', serif;
-    text-decoration: none;
-  }
+    .column > img {
+      height: 20%;
+    }
 
 }
 
 @media screen 
-and (min-width: 401px) and (max-width: 550px) {
+and (min-width: 401px) and (max-width: 600px) {
   
   .column {
     float: left;
@@ -321,23 +306,31 @@ and (min-width: 401px) and (max-width: 550px) {
 
 }
 
-@media screen  and (min-width: 551px) {
+@media screen  and (min-width: 601px) {
+
   .column > img {
     height: 40%;
+    padding-top: 20px
    }
 
    .column > p {
-    margin-top: -10px;
-    font-size: 25px;
+
+    margin-top: 10px;
+    font-size: 35px;
    }
 
    .column > h2 {
-    font-size: 37px;
+    font-size: 47px;
    }
+
+   iframe {
+    text-align: center;
+  }
 
   .column {
     text-align: center;
     height: 2500%;
+    height: 400px;
 
   }
    .row {
@@ -353,8 +346,8 @@ and (min-width: 401px) and (max-width: 550px) {
   
   #techSkillsLogo2 {
     display: inline-block;
-    margin-left: 70px;
-    margin-right: -20px;
+    margin-left: 40px;
+    margin-right: 10px;
   }
   
   #techSkillsLogo3 {
@@ -367,4 +360,3 @@ and (min-width: 401px) and (max-width: 550px) {
     display: inline;
   }
 } 
-
