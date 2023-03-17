@@ -36,23 +36,34 @@ hr {
   text-align: center;
 }
 
-.column > img {
-  height: 5%;
- }
+.form > label {
+  font-size: 20px;
+}
 
 #projectshead {
   text-align: center;
   text-decoration: underline;
+  font-family: 'Merriweather', serif;
 }
 
- #h22 {
+#contactpageh1 {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  text-decoration: underline;
+}
+
+.projectscontent > p {
+  text-decoration: underline;
+}
+
+#h22 {
   color: black;
  }
 
 .row {
   padding-top: 40px;
   text-align: center;
- }
+}
 
 .column > h2 {
   text-decoration: underline;
@@ -126,17 +137,19 @@ label {
   display: inline-block;
 }
 
-h1 {
+#frontpageh1 {
   font-family: 'Merriweather', serif;
   padding-top: 20px;
   font-size: 45px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 p {
   font-family: 'Abel', sans-serif;
   text-align: center;
   padding: 30px;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .melol {
@@ -146,12 +159,13 @@ p {
 input, textarea {
   background-color: rgb(255, 255, 255);
   border-radius: 7px;
-  padding: 4px 7px;
+  padding: 8px 9px;
   font-family: 'Abel', sans-serif;
+  font-size: large;
 }
 
 input[type=submit] {
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 input:focus, textarea:focus {
@@ -199,14 +213,16 @@ input[type=submit]:hover{
 
 @media screen and (max-width: 400px) {
     
-  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 400 pixels */
     .navbar a {
       float: none;
       display: block;
-      font-size: 20px;
+      font-size: 15px;
+      padding: 15px 0px;
     }
 
-    #getmoneyreal {
+    .projectsimages {
+      text-align: center;
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -218,22 +234,25 @@ input[type=submit]:hover{
       width: 100%;
       height: 250px; 
       font-family: 'Merriweather', serif;
-      text-decoration: underline;
+      padding-bottom: 20px;
     }
 
-    .column > p {
-      text-align: center;
-      font-size: 24px;
+    #p1 {
+      font-size: 100%;
+      text-decoration: none;
     }
 
     #techSkillsLogo {
       display: inline-block;
       height: 30%;
+      padding-left: 10px;
     }
     
     #techSkillsLogo2 {
+      padding-top: 8%;
       display: inline-block;
       height: 30%;
+      padding-left: 18px;
     }
     
     #techSkillsLogo3 {
@@ -245,52 +264,47 @@ input[type=submit]:hover{
       display: inline-block;
       height: 30%;
     }
-
-    .column > img {
-      height: 20%;
-    }
-
 }
 
 @media screen 
 and (min-width: 401px) and (max-width: 600px) {
   
   .column {
-    float: left;
+    float: none;
     text-align: center;
     width: 100%;
-    padding: 10px;
-    height: 300px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    height: 400px;
     font-family: 'Merriweather', serif;
     text-decoration: none;
   }
 
-  .row {
-    text-align: center;
-    height: 20px;
-   }
+  #h21 {
+    font-size: 38px;
+  }
 
-  .column > img {
-    height: 35%;
-   }
+  #h22{
+    font-size: 37px;
+    padding-top: -5px;
+  }
 
    .column > p {
     margin-top: -20px;
-    font-size: 19px;
+    font-size: 30px;
    }
 
    .column > img {
-    height: 38%;
+    height: 36%;
    }
 
    #techSkillsLogo {
-    padding-top: ;
     margin-right: 20px;
     margin-left: 0px;
   }
   
   #techSkillsLogo2 {
-    margin-right: -15px;
+    margin-right: -5px;
     margin-left: 5px;
   }
   
@@ -304,9 +318,78 @@ and (min-width: 401px) and (max-width: 600px) {
     margin-left: -5px;
   }
 
+  .projectsimages {
+    display: block;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
 }
 
-@media screen  and (min-width: 601px) {
+@media screen  and (min-width: 601px) and (max-width: 700px) {
+
+  .column > img {
+    height: 32%;
+    padding-top: 20px
+   }
+
+   .column > p {
+
+    margin-top: 10px;
+    font-size: 35px;
+   }
+
+   .column > h2 {
+    font-size: 47px;
+   }
+
+   iframe {
+    text-align: center;
+  }
+
+  .column {
+    text-align: center;
+    height: 2500%;
+    height: 400px;
+
+  }
+   .row {
+    text-align: center;
+    height: 20px;
+   }
+
+  #techSkillsLogo {
+    display: inline-block;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  
+  #techSkillsLogo2 {
+    display: inline-block;
+    margin-left: 40px;
+    margin-right: 10px;
+  }
+  
+  #techSkillsLogo3 {
+    display: inline-block;
+    margin-left: -10px;
+    margin-right: -20px;
+  }
+  
+  .projectsimages {
+    display: block;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  #techSkillsLogo4 {
+    display: inline;
+  }
+} 
+
+@media screen  and (min-width: 701px) {
 
   .column > img {
     height: 40%;
@@ -358,5 +441,12 @@ and (min-width: 401px) and (max-width: 600px) {
   
   #techSkillsLogo4 {
     display: inline;
+  }
+
+  .projectsimages {
+    display: block;
+    text-align: center;
+    margin-left: auto; 
+    margin-right: auto;
   }
 } 

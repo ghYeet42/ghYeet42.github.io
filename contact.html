@@ -20,33 +20,40 @@
         <a href="https://docs.google.com/document/d/1plxjYsKOwPUkDrmB8b3fK9_9K2pS5jCDwt0eeABMAkY/edit#heading=h.x8fm1uorkbaw">Resume</a>
         </div>
 
-    <h1 class="center">Contacts</h1>
-    <p>Do you have a questions or want to reach out?</p>
+    <h1 id="contactpageh1">Contacts</h1>
+    <p>Have a questions or want to reach out?</p>
     
     <div class="medias">
         <a href="mailto:cscarlett@brooklynsteamcenter.org">
-        <i class="fa fa-envelope"></i>
+        <i class="fa fa-envelope" id="email"></i>
         </a>
         
         <a href="https://github.com/ghYeet42">
-        <i class="fa fa-github"></i>
+        <i class="fa fa-github" id="git"></i>
+        </a>
+
+        <a href="https://www.youtube.com/">
+        <i class="fa fa-youtube-play" id="yt"></i>
         </a>
     </div>
     <hr>
 
-    <form class="form" action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail"
-    method="post">
+    <form class="form" action="https://us-central1-steam-center-app-dev.cloudfunctions.net/formToEmail" method="post">
         <input name="send-to" value="myemail@steamcenter.org" hidden>
-        <label for="fname">Name: </label>
+        <label for="email">Name: </label><br><br>
         <input type="text" placeholder="Your Name Here" name="fname"><br><br>
-        <label for="lname">E-mail: </label>
+        <label for="email">E-mail: </label><br><br>
         <input type="text" placeholder="Your E-mail Here" name="e-mail"><br><br>
-        <label for="lname">Comments:</label>
+        <label for="comments">Comments:</label><br><br>
         <textarea name="comments" placeholder="Your Comments Here" id="Comments" cols="30" rows=""></textarea><br>
         <br>
+
+        <!--
         <label>E-mail</label>
         <input type="radio" name="contactTypes" value="E-mail"><br><br>
         <input type="submit" value="Submit">
+        -->
+
     </form>
 </body>
 </html>
