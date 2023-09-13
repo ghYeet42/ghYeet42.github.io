@@ -57,11 +57,9 @@ hr {
   color: white;
 }
 
-
-
 #h22 {
   color: black;
- }
+}
 
 .row {
   padding-top: 40px;
@@ -142,6 +140,12 @@ label {
 #techSkillsLogo4 {
   text-align: center;
   display: inline-block;
+}
+
+#techSkillLogo5 {
+  text-align: center;
+  display: inline-block;
+  font-size: 30px;
 }
 
 #frontpageh1 {
@@ -358,12 +362,11 @@ and (min-width: 401px) and (max-width: 600px) {
   .column {
     text-align: center;
     height: 2500%;
-    height: 400px;
+    height: 500px;
 
   }
    .row {
     text-align: center;
-    height: 20px;
    }
 
   #techSkillsLogo {
@@ -425,7 +428,7 @@ and (min-width: 401px) and (max-width: 600px) {
   }
    .row {
     text-align: center;
-    height: 20px;
+    height: 500px;
    }
 
   #techSkillsLogo {
